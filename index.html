@@ -140,7 +140,6 @@
 
         .footer {
             margin-top: 40px;
-            align-self: center;
         }
 
         body,
@@ -198,12 +197,22 @@
             width: 50px;
         }
 
+        .container {
+            max-width: 1300px;
+        }
+
+        .footer-container {
+            max-width: 1300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
         @media (max-width: 1200px) {
             .container {
                 flex-direction: column;
             }
         }
-
 
         @media (max-width: 700px) {
             .go {
@@ -227,7 +236,6 @@
             input {
                 font-size: 15px;
                 line-height: 20px;
-
             }
 
             .results {
@@ -237,7 +245,6 @@
             .border-row {
                 width: 30px;
             }
-
 
             .intro,
             .results,
@@ -322,8 +329,9 @@
         </div>
         <div class="image-container" style="display:none"><img src="./eth-luck.jpg" class="image" /></div>
     </div>
-
-    <div class="footer" style="display:none">Сделано <a href="https://t.me/enovikov11">enovikov11</a> с ❤️</div>
+    <div class="footer-container">
+        <div class="footer" style="display:none">Сделано <a href="https://t.me/enovikov11">enovikov11</a> с ❤️</div>
+    </div>
 </body>
 
 </html>
