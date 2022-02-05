@@ -64,7 +64,7 @@
 
         async function main() {
             if (params.get('block') && params.get('q1')) {
-                const { hash } = await provider.getBlock(+params.get('block')), answers = BigInt(hash).toString(2).split('');
+                const { hash } = await provider.getBlock(+params.get('block')), answers = BigInt(hash).toString(2).split('').reverse();
 
                 for (let i = 1; params.get('q' + i); i++) {
                     const row = document.createElement('tr'), line1 = document.createElement('td'),
